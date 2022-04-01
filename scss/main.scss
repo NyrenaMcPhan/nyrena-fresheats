@@ -1,33 +1,37 @@
-html, body, h1, h2, h3, p,a{
+html, body, h1, h2, h3, p,a, ul, ol, h1, h2, h3{
     padding: 0;
     border: 0;
     margin: 0;
 }
 
 body{
-    background: #ffffff;
-    background-image: url("images/background.jpg");
-        padding-bottom: 20px;
+    background: url("../images/bgafphoto.jpg");
+    background-size: cover;
+     padding-bottom: 20px;
+     background-attachment: fixed;
+     
     
 }
 
 ul li{
-    
+  
     display:flex;
     display: inline-block;
     background-color: #73A761;
     color: #000;
     opacity: 0.7;
+   
 }
 
 .logo {
+    
     text-align: left;
     display: inline-block;
     width: 100%;
 }
 
 .search{
-
+    margin-top: 20px;
     float: right;
 }
 
@@ -41,12 +45,16 @@ a{
 color: #000;
 font-size: 2em;
 font-weight: bold;
+font-family: 'Fjalla One', sans-serif;
+
+
+
 
 }
 
 
 a:hover {
-    background-color: #8A352E;
+    background-color: #dfa04f;
 }
 
 ul{
@@ -59,13 +67,20 @@ ul{
     font-size: 1em;
     font-weight: bold;
     text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
     
 }
+
+
+
+
 
 ol li{
     display: inline-block;
     padding-left: 20px;
     padding-bottom: 60px;
+   
+
     
 }
 
@@ -77,6 +92,8 @@ ol{
     margin-bottom: 60px;
 }
 
+
+
 .container{
     font-size: 2em;
     text-align: center;
@@ -84,7 +101,10 @@ ol{
 }
 
 h3{
+    margin-top: 50px;
     font-size: 1.5em;
+    font-family: 'Fjalla One', sans-serif;
+
    
 }
 
@@ -93,64 +113,116 @@ img{
         display: inline-block; 
         max-width: 100%;
         height: auto;
-        text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+       
       
         
     }
+
+    
+
+    @media (min-width: 700px) {
+    .column {
+        max-width: 40%;
+        max-width: 200%;
+        display: inline-flex;
+      
+        width: 33.33%;
+        padding: 10px;
+        margin-left: 10px;
+      margin-bottom: 100px;
+        background-image: linear-gradient(#f7a151, #73A761);
+        flex-direction: row;
+    }
+    }
+
+
+    @media (min-width: 700px) {
+        .column1 {
+            max-width: 40%;
+            max-width: 200%;
+       flex-direction: row;
+            display: inline-flex;
+      
+            width: 33.33%;
+            padding: 10px;
+            margin-left: 10px;
+          margin-bottom: 100px;
+            background-image: linear-gradient(#f7a151, #73A761);
+        }
+    }
+
+      
 
    
-
-
-    .column {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-      margin-bottom: 10%;
-        
-        background-image: linear-gradient(#ffffff, #73A761);
-    }
-      
-
-      .column1{
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        
-        background-image: linear-gradient(#73A761, #ffffff);
     
+    @media (min-width: 700px) {
+        .column1 {
+            max-width: 40%;
+            max-width: 200%;
+          flex-direction: row;
+                
+        display: inline-flex;
+        width: 33.33%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        background-image: linear-gradient(#73A761, #f7a151);
+       
+    
+    }
     }
       
       
 
       .row::after {
-       
-        
-        clear: both;
-        display: table;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       background: #73A761;
       }
 
       
 
   footer{
-        position: absolute;
-        width: 50%;
-        bottom: 10px;
-   background: #73A761;
+    width: 100%;
+    background: #73A761;
   }
 
-.bottom{
-    display: flex;
-display:inline-block
-}
 
+div.contact{
+    padding-left: 10px;
+    font-size: xx-small;
+    font-family: 'Fjalla One', sans-serif;
+
+}
 
 
 
 .copyright{
+text-align: center;
 opacity: 0.5;
-font-size: 1em;
+font-size: 2em;
 }
 
+.fa-vimeo:before {
+    content: "\f27d";
+    font-size: x-large;
+}
+
+.fa-vimeo {
+    border: 1px solid #fff;
+    margin-right: 20px;
+    background: #44a7e4;
+    color: white;
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+
+  .icon{
+    text-align: right;
+    
+  }
